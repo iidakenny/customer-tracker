@@ -48,5 +48,8 @@ customers[2].purchases.push("cookies");
 
 console.log(customers);
 
-// Looping through the customers and printing out their name and email.
+// Looping through the customers and printing out their name and email, and total number of purchases..
 
+customers.forEach(customer => {
+    console.log(`Name: ${customer.name}, Email: ${customer.email}, Number of Purchases: ${customer.purchases.length}`);
+});
